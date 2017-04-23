@@ -1,0 +1,88 @@
+ html,
+ body,
+ .container-table {
+   height: 100%;
+ }
+ 
+ .container-table {
+   display: table;
+ }
+ 
+ .vertical-center-row {
+   display: table-cell;
+   vertical-align: middle;
+ }
+ 
+ #mainContainer {
+   background-color: #092B40;
+   color: #FFFFFF;
+ }
+ 
+ #mainContainer a {
+   color: #FFFFFF;
+ }
+ 
+ .searchButton {
+   background-color: #092B40;
+   border: none;
+ }
+ 
+ #searchInput {
+   border-radius: 10px;
+ }
+ 
+ .insideText {
+   z-index: 100;
+   position: relative;
+   left: -2.3em;
+ }
+ 
+ #searchInput {
+   background-color: #092B40;
+ }
+ 
+ #searchedContent a {
+   color: #000;
+ }
+ 
+ .expandItem {
+   animation: expandText 0.5s ease-out;
+ }
+ 
+ .shrinkItem {
+   animation: shrinkText 0.5s ease-out;
+ }
+ 
+ @keyframes expandText {
+   0% {
+     width: 0%;
+   }
+   25% {
+     width: 10%;
+   }
+   50% {
+     width: 20%;
+   }
+   100% {
+     width: 40%;
+   }
+ }
+ 
+ @keyframes shrinkText {
+   0% {
+     width: 40%;
+   }
+   25% {
+     width: 20%;
+   }
+   50% {
+     width: 10%;
+   }
+   100% {
+     width: 1%;
+   }
+ }
+ 
+ .hideItem {
+   display: none;
+ }

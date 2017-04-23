@@ -1,0 +1,57 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Wikipedia Viewer</title>
+  <meta name="description" content="Wikipedia Viewer">
+  <meta name="author" content="Atul Sharma">
+
+ 
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+   <link rel="stylesheet" href="css/WikiViewer.css">
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+  
+  <script src="js/WikiViewer.js" type="text/javascript"></script>
+ 
+</head>
+
+<body>
+
+<div id="mainContainer" class="container container-table">
+  <div id="subContainer" class=" row vertical-center-row">
+    <div id="contentDiv" class="col-md-4 col-md-offset-4 text-center">
+      <h4> <a href="https://en.wikipedia.org/wiki/Special:Random" id="randomArticle" target="_blank" href="">Click here to view random article</a></h4>
+      <div class="row" id="searchDiv ">
+        <button class="searchButton " id="searchIcon">
+      <i class="fa fa-search fa-2x " aria-hidden="true"></i></a>
+      </button>
+
+        <div id="queryDiv" class="hideItem">
+          <input type="text" id="searchInput" />
+
+          <button class="searchButton insideText" id="closeSearch">
+      <i class="fa fa-times " aria-hidden="true"></i></a>
+      </button>
+        </div>
+      </div>
+      <h4>Click icon to search</h4>
+    </div>
+
+
+  </div>
+  <div id="searchedContent">
+  </div>
+
+</body>
+</html>
